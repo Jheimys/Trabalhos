@@ -1,0 +1,93 @@
+/* 
+Aula 2: efeito degrader ---> site css gradiente 
+Aula 3: Modo Responsivo, Profile, Social Icons
+Aula 4: Introdução ao Flexbox
+Aula 5: Caixas, Inline vs Block, Span
+
+*/
+
+/* Rega de reset--> retamos todas as margens e paddind*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(54,77,204,1) 23%, rgba(6,3,71,1) 100%);
+}
+
+.avatar{
+    width: 80px;
+    border-radius: 50px;
+    border:3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+   
+}
+
+h2{
+    font-size: 16px;
+   
+}
+
+.profile{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* quando coloco felx em um elemento pai todos os elementos filhos vão ficar lado a lado*/
+.social{
+    display: flex;
+   /* justify-content: center; só funciona quando tem o flex, que diz justifeque esse 
+    conteudo no centro */
+    justify-content: space-around;
+    list-style: none; /* tira os bullets das listas*/
+    margin: 20px 0;
+}
+
+
+.social img{
+    width: 33px;
+}
+
+.links-list{
+    list-style: none;
+}
+
+.links-list li{
+    margin: 15px 20px;
+   
+}
+
+.links-list li a{
+    /* as listas por padrão são inline para colocar o background devemos 
+    mudar para o display block */
+    display: block;
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    text-decoration: none;
+    color:rgb(54,77,204);
+    font-weight: bold;
+}
+
+.links-list li a span{
+    display: block;
+    color: gray;
+    margin-top: 10px;
+}
+
